@@ -12,7 +12,7 @@ CreateThread(function()
 
 				while IsPedInVehicle(ped, vehicle, true) and GetEntitySpeed(vehicle) == 0.0 do
 					if IsControlJustPressed(0, 311) then  -- touche K
-						TriggerServerEvent('ams:veh_put_away', name)
+						TriggerServerEvent('ams:removeveh', name)
 						DeleteVehicle(vehicle)
 					end
 					Wait(0)
